@@ -3,12 +3,12 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 
-data_dir = BASE_DIR / "Data"
+data_dir = BASE_DIR / "data" / "raw"
 
-path_csv = data_dir / "data_nhahem.csv"
-path_csv_tien_ich = data_dir / "data_tien_ich_nhahem.csv"
+path_csv = data_dir / "properties" /"alley_houses.csv"
+path_csv_tien_ich = data_dir / "amenities" / "alley_house.csv"
 
 # Khởi tạo Session ở ngoài cùng để tận dụng connection pooling giúp request nhanh hơn
 session = requests.Session()
@@ -34,7 +34,7 @@ dct = {
 dctt = {}
 total_bds = 0 
 
-for num in range(1, 779):
+for num in range(1, 788):
     url = f'https://moso.vn/tim-kiem-nha-dat?q=TP.HCM&trang={num}'
     print(f"Đang cào trang: {num}")
     

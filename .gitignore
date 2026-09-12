@@ -1,0 +1,18 @@
+# 1. Virtual Environment (uv)
+.venv/
+
+# 2. Raw Data (Chỉ giữ lại data/sample/ để commit mẫu)
+
+
+# 3. Python Cache & Build
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 4. Environment / Secrets
+.env
+.env.*
+
+# 5. IDE settings
+.vscode/
+.idea/

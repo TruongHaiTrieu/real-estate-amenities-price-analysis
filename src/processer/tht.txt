@@ -1,0 +1,17 @@
+Muc tiêu: process data raw
+- Đầu tiên là clone về 
+- setup git 
+- khi vào thư mục: hỏi chat install các thư mục trên git như thế nào kèm theo ảnh thư mục (dùng quản lý thư viện uv)
+- hiện tại ở data/ và src/ đã có process/ và processer/ để làm việc
+	- lưu trữ dữ liệu mới tại thư mục này có thể xem format ở thư mục raw/ hoặc sample/ để tổ chức dữ liệu
+	- viết code (AI hay người đều oke: có task rồi) để có sắn file __init__.py đừng xóa, tạo thêm 1 file .ipynb để xử lý dữ liệu 
+- đến xử lý dữ liệu trên cả 4 file đặc điểm
+	- đổi tên toàn bộ các cột sang danh từ của nó trong tiêng anh 
+	- features có dữ liệu none nhiều > 2/3 thì bỏ trường đó 
+	- Ở mục địa chỉ chỉ xử lý các BĐS có địa chỉ ở TP.HCM (những BĐS có địa chỉ chứa từ khóa "TP.HCM" thì giữa còn lại bỏ)
+	- thêm feature diện tích bằng cách lấy (tổng tiền) / (tiền trên 1 m^{2}) 
+	- Thêm features mới để làm việc với phân cụm (tìm cách đến t3 nếu không có thì làm chung)
+		+ chuyển hóa cột địa chỉ sang tọa độ bao gồm kinh độ, vĩ độ 
+		+ thêm feature có tên là `khoảng cách trung tâm` với dữ liệu là số thức khoảng cách đường chim bay của 1 BĐS đến nhà thờ Đc Bà 
+		+ tiếp theo đến Trực quan hóa: mục tiêu của dữ liệu là để phân cụm nên hay trực quan the các điểm
+- đến xử lý dữ liệu trên 4 file tiện ích chưa nghĩ ra -.-, để cập nhật mục này sau
