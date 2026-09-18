@@ -14,5 +14,6 @@ __pycache__/
 .env.*
 
 # 5. IDE settings
-.vscode/
 .idea/
+.DS_Store
+
