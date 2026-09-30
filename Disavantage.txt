@@ -1,0 +1,4 @@
+- thiếu dữ liệu trầm trọng 
+- nhược điểm của thuật toán k-means
+- mẫu quá ít không thể suy luận lên tổng thể
+- đã khảo sát dữ liệu tuy nhiên, những dữ liệu thiếu rất nhiều 
